@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:padding="10sp"
+        android:id="@+id/search_toolbar"
+        >
+
+        <TextView
+            android:id="@+id/other_username"
+            android:layout_width="246dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginEnd="31dp"
+            android:layout_toRightOf="@id/profile_pic_layout"
+
+            android:text="@string/usuario"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="51sp"
+            android:layout_height="51sp"
+            android:layout_marginEnd="5sp"
+            android:contentDescription="@string/buscar"
+            android:id="@+id/back_btn"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white" />
+
+        <include
+            android:id="@+id/profile_pic_layout"
+            layout="@layout/profile_pic_view"
+            android:layout_width="48sp"
+            android:layout_height="48sp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/back_btn" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_toolbar"
+        android:layout_above="@id/bottom_layout"
+        android:id="@+id/chat_recyclerview"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_alignParentBottom="true"
+        android:padding="8sp"
+        android:id="@+id/bottom_layout"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_toLeftOf="@id/message_send_btn"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5sp"
+            android:hint="@string/mensaje"
+            android:padding="10sp"
+            android:id="@+id/chat_message_input"/>
+
+        <ImageButton
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/icon_send"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/message_send_btn"
+            app:tint="@color/my_primary"
+            android:contentDescription="@string/boton_mensaje"
+            android:padding="8sp"
+            android:layout_marginStart="10sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

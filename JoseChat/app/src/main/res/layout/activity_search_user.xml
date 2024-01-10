@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchUserActivity"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_primary"
+        android:padding="10dp"
+        android:id="@+id/search_toolbar"
+        >
+
+        <TextView
+            android:layout_width="319dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="78dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toRightOf="@id/back_button"
+            android:text="@string/buscar_usuarios"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="51sp"
+            android:layout_height="51sp"
+
+            android:layout_marginEnd="39dp"
+            android:contentDescription="@string/buscar"
+            android:id="@+id/back_button"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:layout_below="@id/search_toolbar"
+        android:id="@+id/sear_user_layout">
+
+        <EditText
+            android:inputType="text"
+            android:layout_width="300sp"
+            android:layout_height="50sp"
+            android:background="@drawable/edit_text_rounded_corner"
+            android:elevation="5sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="15sp"
+            android:layout_toLeftOf="@id/sear_user_button"
+            android:hint="@string/username"
+            android:padding="10sp"
+            android:id="@+id/search_username_input"/>
+
+        <ImageButton
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/search_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="30sp"
+            android:contentDescription="@string/buscar_usuarios"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:tint="@color/my_primary"
+            android:id="@+id/sear_user_button"
+            />
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sear_user_layout"
+        android:padding="15sp"
+        android:id="@+id/search_user_recyclerview"
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">JoseChat</string>
+    <string name="designer">Diseñado por José Carlos Sánchez García</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="introduzca_numero">Introduzca número de teléfono</string>
+    <string name="hint_mobile">Teléfono mobil</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="introduzca_codigo">Introduzca el código que se ha enviado a su SMS</string>
+    <string name="codigo">Código secreto</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="reenviar">Reenviar código en 30 s</string>
+    <string name="introduzca_usuario">Introduzca nombre de usuario</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="acceder">Acceder</string>
+    <string name="Chats">Chats</string>
+    <string name="Profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Chat_screen">Chat Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Profile_screen">Profile Screen</string>
+
+    <string name="buscar">Buscar</string>
+    <string name="buscar_usuarios">Búsqueda de usuarios</string>
+    <string name="num_ej">+34 612612612</string>
+    <string name="usuario">Usuario</string>
+    <string name="mensaje">Escribe tu mensaje...</string>
+    <string name="boton_mensaje">Enviar mensaje</string>
+    <string name="mesaje_ej">Mensaje de ejemplo</string>
+    <string name="demo_time">10:00</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="logout">Log Out</string>
+</resources>

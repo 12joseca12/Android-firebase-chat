@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="160sp"
+        android:layout_height="160sp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="@color/my_primary"
+        android:src="@drawable/user_icon"
+        android:scaleType="centerCrop"
+        android:id="@+id/profile_image_view"
+        />
+
+    <EditText
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10sp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:padding="10sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="10sp"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/profile_username"/>
+
+    <EditText
+        android:layout_width="350sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="10sp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:padding="10sp"
+        android:layout_margin="20sp"
+        android:hint="@string/num_ej"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:enabled="false"
+        android:id="@+id/profile_phone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938"
+        >
+
+        <Button
+            android:layout_width="300sp"
+            android:layout_height="80sp"
+            android:text="@string/actualizar"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/profile_update_btn"/>
+
+        <ProgressBar
+            android:layout_width="32sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_progress_bar"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:id="@+id/logout_btn"
+        />
+
+</LinearLayout>

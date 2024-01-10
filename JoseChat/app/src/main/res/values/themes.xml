@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JoseChat" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- José Carlos Sánchez García -->
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="colorOnPrimary">@color/my_primary</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorSecondary">@color/my_secondary</item>
+        <item name="colorOnSecondary">@color/my_secondary</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:windowBackground">@color/off_white</item>
+    </style>
+
+    <style name="Theme.JoseChat" parent="Base.Theme.JoseChat" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "837706609809",
+    "project_id": "josechat-12",
+    "storage_bucket": "josechat-12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837706609809:android:64f95064affb2557523b30",
+        "android_client_info": {
+          "package_name": "com.example.josechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2IiXLjmzVZoCTfhVT1urOxxi_N5Vvenw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
